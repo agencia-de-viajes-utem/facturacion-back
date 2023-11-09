@@ -9,16 +9,16 @@ metadata:
     acme.cert-manager.io/http01-edit-in-place: "true"
 spec:
   rules:
-    - host: api.facturacion.lumonidy.studio
-      http:
-        paths:
-          - backend:
-              service:
-                name: back-facturacion
-                port:
-                  number: 80
-            pathType: Prefix
-            path: /
+  - host: api.facturacion.lumonidy.studio
+    http:
+      paths:
+      - backend:
+          service:
+            name: back-facturacion
+            port:
+              number: 80
+        pathType: Prefix
+        path: /
   tls:
     - hosts:
         - api.facturacion.lumonidy.studio
