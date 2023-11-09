@@ -1,0 +1,13 @@
+#back-facturacion.yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: back-facturacion
+spec:
+  selector:
+    app: back-facturacion
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 1010
+  type: ClusterIP
